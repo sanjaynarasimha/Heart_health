@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="static/styles_result.css">
+</head>
+<body>
+    <div class="center-container">
+        <h1>Prediction Result</h1>
+        <p>
+            {% if prediction == 0 %}
+                <b>No heart disease predicted, heart health fine :)</b>
+            {% else %}
+            <b>Yes heart disease predicted, heart health not fine :(</b>
+            {% endif %}
+        </p>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
